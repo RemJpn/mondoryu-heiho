@@ -1,0 +1,24 @@
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: grey;
+}
+
+.footer-name {
+  display: flex;
+  gap: 1rem;
+}
