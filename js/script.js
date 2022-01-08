@@ -1,38 +1,38 @@
 const navbarTemplate = document.createElement("template");
 navbarTemplate.innerHTML = `
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
     <nav class="mobile-navbar">
       <div class="mobile-navbar-menu">
         <div class="menu-logo">
-          <img src="/images/Logo.png" alt="">
+          <img src="./images/Logo.png" alt="">
         </div>
-        <img src="/images/Close.svg" alt="" id="navbar-close">
-        <a href="/" class="navbar-link">Mondō Ryū Heihō</a>
-        <a href="/shiseigumi.html" class="navbar-link">Shiseigumi</a>
-        <a href="/histoire.html" class="navbar-link">Histoire</a>
-        <a href="/galerie.html" class="navbar-link">Galerie</a>
-        <a href="/lexique.html" class="navbar-link">Lexique</a>
-        <a href="/liens.html" class="navbar-link">Liens</a>
+        <img src="./images/Close.svg" alt="" id="navbar-close">
+        <a href="./" class="navbar-link">Mondō Ryū Heihō</a>
+        <a href="./shiseigumi.html" class="navbar-link">Shiseigumi</a>
+        <a href="./histoire.html" class="navbar-link">Histoire</a>
+        <a href="./galerie.html" class="navbar-link">Galerie</a>
+        <a href="./lexique.html" class="navbar-link">Lexique</a>
+        <a href="./liens.html" class="navbar-link">Liens</a>
       </div>
       <div class="mobile-navbar-bottom">
-        <img src="/images/burgerIcon.svg" alt="" id="navbar-burger">
-        <a href="/"><img src="/images/logo_white_bg.png" alt="" class="mobile-navbar-logo"></a>
+        <img src="./images/burgerIcon.svg" alt="" id="navbar-burger">
+        <a href="./"><img src="./images/logo_white_bg.png" alt="" class="mobile-navbar-logo"></a>
       </div>
     </nav>
 
     <div class="banner">
-      <img src="/images/banner.png" alt="">
+      <img src="./images/banner.png" alt="">
     </div>
     
     <nav class="desktop-navbar">
-      <a href="/"><img src="/images/logo_white_bg.png" alt=""></a>
-      <a href="/" class="navbar-link">Mondō Ryū Heihō</a>
-      <a href="/shiseigumi.html" class="navbar-link">Shiseigumi</a>
-      <a href="/histoire.html" class="navbar-link">Histoire</a>
-      <a href="/galerie.html" class="navbar-link">Galerie</a>
-      <a href="/lexique.html" class="navbar-link">Lexique</a>
-      <a href="/liens.html" class="navbar-link">Liens</a>
+      <a href="./"><img src="./images/logo_white_bg.png" alt=""></a>
+      <a href="./" class="navbar-link">Mondō Ryū Heihō</a>
+      <a href="./shiseigumi.html" class="navbar-link">Shiseigumi</a>
+      <a href="./histoire.html" class="navbar-link">Histoire</a>
+      <a href="./galerie.html" class="navbar-link">Galerie</a>
+      <a href="./lexique.html" class="navbar-link">Lexique</a>
+      <a href="./liens.html" class="navbar-link">Liens</a>
     </nav>
 `;
 
@@ -65,7 +65,7 @@ class Footer extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-      <link rel="stylesheet" href="/css/footer.css">
+      <link rel="stylesheet" href="./css/footer.css">
       <footer>
         <div class="footer-name">
           <span>Shiseigumi</span>
