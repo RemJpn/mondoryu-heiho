@@ -47,7 +47,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  background-image: url(/images/bgLogo.png);
+  background-image: url(../images/bgLogo.png);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
