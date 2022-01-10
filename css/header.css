@@ -107,6 +107,10 @@
   font-weight: 400;
   transition: all 0.25s ease-out;
 }
+.active-page {
+  pointer-events: none;
+  color: #ffe9a9;
+}
 
 .navbar-link:hover {
   transform: matrix(1, 0, -0.5, 1, 0, 0);

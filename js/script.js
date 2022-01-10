@@ -8,16 +8,16 @@ navbarTemplate.innerHTML = `
           <img src="./images/Logo.png" alt="">
         </div>
         <img src="./images/Close.svg" alt="" id="navbar-close">
-        <a href="./" class="navbar-link">Mondō Ryū Heihō</a>
-        <a href="./shiseigumi.html" class="navbar-link">Shiseigumi</a>
-        <a href="./histoire.html" class="navbar-link">Histoire</a>
-        <a href="./galerie.html" class="navbar-link">Galerie</a>
-        <a href="./lexique.html" class="navbar-link">Lexique</a>
-        <a href="./liens.html" class="navbar-link">Liens</a>
+        <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
+        <a href="./shiseigumi.html" class="navbar-link shiseigumi">Shiseigumi</a>
+        <a href="./histoire.html" class="navbar-link histoire">Histoire</a>
+        <a href="./galerie.html" class="navbar-link galerie">Galerie</a>
+        <a href="./lexique.html" class="navbar-link lexique">Lexique</a>
+        <a href="./liens.html" class="navbar-link liens">Liens</a>
       </div>
       <div class="mobile-navbar-bottom">
         <img src="./images/burgerIcon.svg" alt="" id="navbar-burger">
-        <a href="./"><img src="./images/logo_white_bg.png" alt="" class="mobile-navbar-logo"></a>
+        <img src="./images/logo_white_bg.png" alt="" class="mobile-navbar-logo">
       </div>
     </nav>
 
@@ -27,12 +27,12 @@ navbarTemplate.innerHTML = `
     
     <nav class="desktop-navbar">
       <a href="./"><img src="./images/logo_white_bg.png" alt=""></a>
-      <a href="./" class="navbar-link">Mondō Ryū Heihō</a>
-      <a href="./shiseigumi.html" class="navbar-link">Shiseigumi</a>
-      <a href="./histoire.html" class="navbar-link">Histoire</a>
-      <a href="./galerie.html" class="navbar-link">Galerie</a>
-      <a href="./lexique.html" class="navbar-link">Lexique</a>
-      <a href="./liens.html" class="navbar-link">Liens</a>
+      <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
+      <a href="./shiseigumi.html" class="navbar-link shiseigumi">Shiseigumi</a>
+      <a href="./histoire.html" class="navbar-link histoire">Histoire</a>
+      <a href="./galerie.html" class="navbar-link galerie">Galerie</a>
+      <a href="./lexique.html" class="navbar-link lexique">Lexique</a>
+      <a href="./liens.html" class="navbar-link liens">Liens</a>
     </nav>
 `;
 
@@ -46,7 +46,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     const navbar = this.shadowRoot.querySelector(".mobile-navbar");
     this.shadowRoot
-      .querySelector("#navbar-burger")
+      .querySelector(".mobile-navbar-bottom")
       .addEventListener("click", () => {
         navbar.classList.add("mobile-navbar--open");
         document.body.classList.add("stop-scrolling");
@@ -57,6 +57,10 @@ class Header extends HTMLElement {
         navbar.classList.remove("mobile-navbar--open");
         document.body.classList.remove("stop-scrolling");
       });
+    const page = this.getAttribute("page");
+    [...this.shadowRoot.querySelectorAll(`.${page}`)].map((link) =>
+      link.classList.add("active-page")
+    );
   }
 }
 window.customElements.define("my-header", Header);

@@ -23,7 +23,7 @@ a {
 
 body {
   position: relative;
-  /* padding-bottom: var(--footer-height); */
+  background-color: var(--dark-color);
 }
 
 .stop-scrolling {
@@ -42,11 +42,7 @@ body {
 
 main {
   padding: 2rem 1rem 4rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
+  background-color: white;
   background-image: url(../images/bgLogo.png);
   background-position: center;
   background-attachment: fixed;
@@ -58,6 +54,14 @@ main {
     padding: 2rem 2rem 4rem;
     background-size: auto;
   }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 main p {
