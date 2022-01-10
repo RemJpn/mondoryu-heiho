@@ -7,7 +7,7 @@ navbarTemplate.innerHTML = `
         <div class="menu-logo">
           <img src="./images/Logo.png" alt="">
         </div>
-        <img src="./images/Close.svg" alt="" id="navbar-close">
+        <img src="./images/Close.svg" alt="Fermer" id="navbar-close">
         <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
         <a href="./shiseigumi.html" class="navbar-link shiseigumi">Shiseigumi</a>
         <a href="./histoire.html" class="navbar-link histoire">Histoire</a>
@@ -16,8 +16,8 @@ navbarTemplate.innerHTML = `
         <a href="./liens.html" class="navbar-link liens">Liens</a>
       </div>
       <div class="mobile-navbar-bottom">
-        <img src="./images/burgerIcon.svg" alt="" id="navbar-burger">
-        <img src="./images/logo_white_bg.png" alt="" class="mobile-navbar-logo">
+        <img src="./images/burgerIcon.svg" alt="Menu" id="navbar-burger">
+        <img src="./images/logo_white_bg.png" alt="Logo du club" class="mobile-navbar-logo">
       </div>
     </nav>
 
@@ -26,7 +26,7 @@ navbarTemplate.innerHTML = `
     </div>
     
     <nav class="desktop-navbar">
-      <a href="./"><img src="./images/logo_white_bg.png" alt=""></a>
+      <a href="./"><img src="./images/logo_white_bg.png" alt="Logo du club"></a>
       <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
       <a href="./shiseigumi.html" class="navbar-link shiseigumi">Shiseigumi</a>
       <a href="./histoire.html" class="navbar-link histoire">Histoire</a>
