@@ -48,6 +48,9 @@ main {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: contain;
+
+  box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  background-color: #fffef0;
 }
 @media screen and (min-width: 1024px) {
   main {
