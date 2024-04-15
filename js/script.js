@@ -9,6 +9,7 @@ navbarTemplate.innerHTML = `
         </div>
         <img src="./images/Close.svg" alt="Fermer" id="navbar-close">
         <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
+        <a href="./koroho.htm" class="navbar-link koroho">Kōrōhō</a>
         <a href="./infos.htm" class="navbar-link shiseigumi">Shiseigumi</a>
         <a href="./histoire.htm" class="navbar-link histoire">Histoire</a>
         <a href="./medias.htm" class="navbar-link galerie">Galerie</a>
@@ -28,6 +29,7 @@ navbarTemplate.innerHTML = `
     <nav class="desktop-navbar">
       <a href="./"><img src="./images/logo_white_bg.png" alt="Logo du club"></a>
       <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
+      <a href="./koroho.htm" class="navbar-link koroho">Kōrōhō</a>
       <a href="./infos.htm" class="navbar-link shiseigumi">Shiseigumi</a>
       <a href="./histoire.htm" class="navbar-link histoire">Histoire</a>
       <a href="./medias.htm" class="navbar-link galerie">Galerie</a>
@@ -84,7 +86,7 @@ class Footer extends HTMLElement {
               fill="currentColor" />
           </svg>
         </a>
-        <a href="mailto:shiseigumi@ntymail.com">Email</a>
+        <a href="mailto:shiseigumi@gmail.com">Email</a>
       </footer>
     `;
   }

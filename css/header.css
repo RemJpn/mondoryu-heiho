@@ -55,7 +55,7 @@
   display: none;
   align-items: center;
   gap: 1.5rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   height: var(--navbar-desktop-height);
   position: -webkit-sticky;
   position: sticky;
@@ -64,7 +64,7 @@
 }
 
 .desktop-navbar img {
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
   height: 46px;
 }
 
@@ -153,3 +153,10 @@
     margin-top: 0;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .desktop-navbar {
+    padding: 0.5rem 2rem;
+  }
+}
+
