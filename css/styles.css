@@ -40,6 +40,10 @@ body {
   }
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 main {
   padding: 2rem 1rem 4rem;
   background-color: white;
@@ -220,21 +224,21 @@ section {
   }
 }
 
-.koroho.presentation{
+.koroho.presentation {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.koroho.presentation .pictures{
+.koroho.presentation .pictures {
   flex-shrink: 0;
 }
-.koroho.presentation .description{
+.koroho.presentation .description {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 @media screen and (min-width: 1024px) {
-  .koroho.presentation{
+  .koroho.presentation {
     flex-direction: row;
   }
 }
