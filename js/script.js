@@ -9,8 +9,7 @@ navbarTemplate.innerHTML = `
         </div>
         <img src="./images/Close.svg" alt="Fermer" id="navbar-close">
         <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
-        <a href="./koroho.htm" class="navbar-link koroho">Kōrōhō</a>
-        <a href="./infos.htm" class="navbar-link shiseigumi">Shiseigumi</a>
+        <a href="./infos.htm" class="navbar-link raijingumi">Raijingumi</a>
         <a href="./histoire.htm" class="navbar-link histoire">Histoire</a>
         <a href="./medias.htm" class="navbar-link galerie">Galerie</a>
         <a href="./lexique.htm" class="navbar-link lexique">Lexique</a>
@@ -29,8 +28,7 @@ navbarTemplate.innerHTML = `
     <nav class="desktop-navbar">
       <a href="./"><img src="./images/logo_white_bg.png" alt="Logo du club"></a>
       <a href="./" class="navbar-link mondoryu">Mondō Ryū Heihō</a>
-      <a href="./koroho.htm" class="navbar-link koroho">Kōrōhō</a>
-      <a href="./infos.htm" class="navbar-link shiseigumi">Shiseigumi</a>
+      <a href="./infos.htm" class="navbar-link raijingumi">Raijingumi</a>
       <a href="./histoire.htm" class="navbar-link histoire">Histoire</a>
       <a href="./medias.htm" class="navbar-link galerie">Galerie</a>
       <a href="./lexique.htm" class="navbar-link lexique">Lexique</a>
@@ -74,7 +72,7 @@ class Footer extends HTMLElement {
       <link rel="stylesheet" href="./css/footer.css">
       <footer>
         <div class="footer-name">
-          <span>Shiseigumi</span>
+          <span>Raijingumi</span>
           <span class="desktop-only">士西組</span>
           <span class="desktop-only">Dōjō de bujutsu</span>
           
@@ -86,7 +84,7 @@ class Footer extends HTMLElement {
               fill="currentColor" />
           </svg>
         </a>
-        <a href="mailto:shiseigumi@gmail.com">Email</a>
+        <a href="mailto:raijingumi@gmail.com">Email</a>
       </footer>
     `;
   }
